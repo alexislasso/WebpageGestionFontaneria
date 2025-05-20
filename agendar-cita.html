@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Agendar Cita</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Nueva Cita</h1>
+        <form id="cita-form">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" required>
+
+            <label for="servicio">Servicio:</label>
+            <select id="servicio" required>
+                <option value="">Seleccione...</option>
+                <option value="reparacion">Reparación básica</option>
+                <option value="emergencia">Emergencia 24h</option>
+            </select>
+
+            <label for="tecnico">Técnico:</label>
+            <select id="tecnico" required>
+                <option value="">Seleccione...</option>
+                <option value="tec1">Carlos Pérez (Fontanería residencial)</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+</body>
+</html>

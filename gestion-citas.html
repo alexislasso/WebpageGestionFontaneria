@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de citas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido, <span id="user-role">Administrador</span></h1>
+        <nav>
+            <ul>
+                <li><a href="agendar-cita.html">Agendar Cita</a></li>
+                <li><a href="#">Gestión de Citas</a></li>
+                <li><a href="login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="citas-pendientes" class="card">
+            <h2>Citas Pendientes</h2>
+            <table id="tabla-citas">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos dinámicos desde JS -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
